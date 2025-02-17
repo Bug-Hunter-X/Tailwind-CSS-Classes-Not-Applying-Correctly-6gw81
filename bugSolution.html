@@ -1,0 +1,11 @@
+To fix the issue, ensure that the parent element (`div` with class `flex justify-center items-center`) has a defined width. Without a defined width, `justify-center` won't function correctly. Adding a width will fix the centering.  Also verify your Tailwind CSS installation and configuration to ensure `bg-red-500` is correctly defined.
+
+```html
+<div class="flex justify-center items-center w-full">
+  <div class="bg-red-500 p-4 rounded-lg text-white">
+    Some text
+  </div>
+</div>
+```
+
+Adding `w-full` to the parent div makes it occupy the full available width, allowing `justify-center` to correctly center the child element.
