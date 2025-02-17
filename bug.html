@@ -1,0 +1,11 @@
+The following Tailwind CSS classes are causing unexpected behavior:
+
+```html
+<div class="flex justify-center items-center">
+  <div class="bg-red-500 p-4 rounded-lg text-white">
+    Some text
+  </div>
+</div>
+```
+
+The `justify-center` class is not working as expected, causing the inner div not to be centered horizontally.  Additionally, the `bg-red-500` class is not applying the correct background color.
